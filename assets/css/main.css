@@ -1,0 +1,115 @@
+/* Flexbox and css-grid */
+
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.card {
+  margin: 50px;
+  width: 300px;
+  height: 350px;
+  display: grid;
+  grid-template-rows: 75px 200px 75px;
+  border-radius: 30px;
+  box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.4);
+}
+
+.card__header {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.card__header .card__header--img {
+  background-color: gray;
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.card__header .card__header--img h2 {
+  align-self: center;
+}
+
+.card__header--title {
+  margin-right: 50px;
+}
+
+.card__header--title h1 {
+  font-size: 25px;
+}
+
+.card__header--title p {
+  font-size: 15px;
+  color: grey;
+}
+
+.card__body {
+  background-color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card__body h2 {
+  color: white;
+  font-size: 70px;
+}
+
+.card__footer {
+  background-color: white;
+  font-size: 13px;
+  color: grey;
+  display: flex;
+  flex-direction: column;
+}
+
+.card__footer p {
+  font-size: 13px;
+  color: grey;
+  margin: 5px 20px;
+}
+
+.card__footer--container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.card__footer--buttons {
+  padding: 0 10px;
+  align-self: center;
+}
+
+.card__footer--buttons button {
+  margin: 0 10px;
+  background-color: transparent;
+  color: #a349a4;
+  border: none;
+}
+
+.card__footer--buttons button:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.card__footer--icons {
+  padding: 0 10px;
+  align-self: center;
+}
+
+.card__footer--icons i {
+  margin: 5px 10px;
+  font-size: 20px;
+}
+
+.card__footer--icons i:hover {
+  cursor: pointer;
+}
